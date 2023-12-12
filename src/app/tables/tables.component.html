@@ -1,0 +1,12 @@
+
+    <form (submit)="addTable()">
+    <label for="">id</label>
+    <input type="text"  name="id" required [(ngModel)]="TableForm['id']" >
+    <label for="">marque</label>
+    <input type="text" name="marque" required [(ngModel)]="TableForm['marque']">
+    <label for="">description</label>
+    <input type="text" name="description" required [(ngModel)]='TableForm["description"]'>
+    <label for="">dateConstruction</label>
+    <input type="text" name="dateConstruction" required [(ngModel)]='TableForm["dateConstruction"]'>    
+    <button type="submit">Ajouter</button>
+</form>
